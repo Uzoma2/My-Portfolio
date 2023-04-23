@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #ff66c4;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+body {
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+/* HEADER */
+.logo {
+  width: 200px;
+  height: 65px;
+  object-fit: contain;
+}
+.header-nav-link {
+  font-size: 17px;
+  font-weight: 500;
+}
+.header-nav-link:hover {
+  scale: 1.1;
+  color: var(--accent);
+}
+/* MAIN */
+.main {
+  padding: 20px;
+}
+/* Hero */
+.hero {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-description {
+  margin-top: 80px;
+  text-align: center;
+}
+.hero-first-heading {
+  font-size: 46px;
+  font-weight: 700;
+}
+.hero-second-heading {
+  font-size: 96px;
+  font-weight: 700;
+}
+.hero-third-heading {
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+.hero-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.hero-links a {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.contact-link {
+  background: var(--accent);
+  box-shadow: var(--box-shadow);
+  color: #fff;
+}
+
+.about-link {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
