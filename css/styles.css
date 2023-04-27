@@ -7,15 +7,12 @@
 :root {
   --accent: #ff66c4;
   --secondary-color: #f5f2fe;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 body {
   font-family: "Playfair Display", serif;
 }
 
-p {
-  font-family: "Poppins", sans-serif;
-}
 /* HEADER */
 .logo {
   width: 200px;
@@ -25,6 +22,7 @@ p {
 .header-nav-link {
   font-size: 17px;
   font-weight: 500;
+  transition: all 0.3s;
 }
 .header-nav-link:hover {
   scale: 1.1;
@@ -40,6 +38,7 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-shadow: var(--box-shadow);
 }
 
 .hero-description {
@@ -82,4 +81,81 @@ p {
 .about-link {
   color: var(--accent);
   border: 1px solid var(--accent);
+}
+
+.projects {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.intro-projects {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.intro-projects p {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.intro-projects p::before {
+  content: "";
+  height: 1px;
+  width: 500px;
+  background-color: var(--accent);
+  display: block;
+}
+.intro-projects p::after {
+  content: "";
+  height: 1px;
+  width: 500px;
+  background-color: var(--accent);
+  display: block;
+}
+.projects img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+.project1,
+.project2,
+.project3 {
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+.projects-heading {
+  font-size: 25px;
+  opacity: 0.8;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.arrow {
+  font-size: 26px;
+  transform: translatey(11px);
+  color: var(--accent);
+}
+
+.project-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.footer {
+  margin-top: 80px;
+  padding: 20px;
+  color: #f3efef;
+  background-color: var(--accent);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.social-icons {
+  display: flex;
+  transform: translateY(-2.5px);
+  column-gap: 20px;
 }
