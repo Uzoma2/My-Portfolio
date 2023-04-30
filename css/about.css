@@ -1,0 +1,246 @@
+.main {
+  margin-top: 40px;
+}
+
+.about-content-wrap {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+.pad-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.about-me {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+.about-me h1 {
+  font-size: 28px;
+  margin-top: 30px;
+}
+.about-me h3 {
+  font-size: 22px;
+  font-weight: 700;
+  opacity: 0.7;
+  margin-top: 15px;
+}
+
+.about-hero-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  display: inline-block;
+
+  cursor: pointer;
+  background: var(--accent);
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.about-hero-link:hover {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  background: var(--secondary-color);
+}
+
+.about-paragraph {
+  line-height: 1.5;
+  margin: 30px 0;
+  opacity: 0.7;
+  text-align: justify;
+}
+.image-wrap {
+  flex: 0 0 40%;
+  max-width: 40%;
+  text-align: center;
+  border-right: 6px solid var(--accent);
+}
+
+.about-img {
+  height: 400px;
+  border-radius: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 30px;
+}
+.skills-content-wrap {
+  margin-top: 80px;
+}
+.skills-heading {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.skills-heading::before {
+  content: "";
+  height: 1px;
+  width: 500px;
+  background-color: var(--accent);
+  display: block;
+}
+.skills-heading::after {
+  content: "";
+  height: 1px;
+  width: 500px;
+  background-color: var(--accent);
+  display: block;
+}
+.skills img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+.skill-1,
+.skill-2,
+.skill-3,
+.skill-4,
+.skill-5 {
+  text-align: center;
+}
+
+@media (max-width: 1064px) {
+  .skills-heading::before {
+    width: 400px;
+  }
+  .skills-heading::after {
+    width: 400px;
+  }
+}
+
+@media (max-width: 994px) {
+  .skills-heading::before {
+    width: 350px;
+  }
+  .skills-heading::after {
+    width: 350px;
+  }
+}
+@media (max-width: 900px) {
+  .about-me {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .image-wrap {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .image-wrap img {
+    margin-top: 40px;
+  }
+  .skills-heading::before {
+    width: 250px;
+  }
+  .skills-heading::after {
+    width: 250px;
+  }
+}
+@media (max-width: 890px) {
+  .about-me h1 {
+    font-size: 26px;
+  }
+  .about-me h3 {
+    font-size: 19px;
+  }
+  .about-me p {
+    font-size: 15px;
+  }
+  .image-wrap img {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 805px) {
+  .about-content-wrap {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about-me {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .image-wrap {
+    flex: 0 0 80%;
+    max-width: 80%;
+    border-right: none;
+  }
+  .about-me h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .about-me h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .about-me p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .about-hero-link {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+  }
+}
+@media (max-width: 742px) {
+  .image-wrap img {
+    margin-top: 5px;
+    padding-right: 0;
+  }
+}
+@media (max-width: 742px) {
+  .skills-heading {
+    font-size: 16px;
+  }
+  .skills-heading::before {
+    width: 200px;
+  }
+  .skills-heading::after {
+    width: 200px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 570px) {
+  .skills-heading::before {
+    width: 150px;
+  }
+  .skills-heading::after {
+    width: 150px;
+  }
+  .image-wrap {
+    display: none;
+  }
+}
+@media (max-width: 486px) {
+  .about-me h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .about-me h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .about-me p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .skills-heading::before {
+    width: 100px;
+  }
+  .skills-heading::after {
+    width: 100px;
+  }
+  .skills {
+    flex-direction: column;
+  }
+}

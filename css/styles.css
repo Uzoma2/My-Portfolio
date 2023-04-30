@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+}
 :root {
   --accent: #ff66c4;
   --secondary-color: #f5f2fe;
@@ -12,7 +14,9 @@
 body {
   font-family: "Playfair Display", serif;
 }
-
+p {
+  font-family: "Poppins", sans-serif;
+}
 /* HEADER */
 .logo {
   width: 200px;
@@ -22,7 +26,7 @@ body {
 .header-nav-link {
   font-size: 17px;
   font-weight: 500;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .header-nav-link:hover {
   scale: 1.1;
@@ -83,7 +87,7 @@ body {
 .hero-links a {
   border-radius: 4px;
   padding: 20px 15px;
-  text-decoration: none;
+
   text-transform: capitalize;
   cursor: pointer;
 }
