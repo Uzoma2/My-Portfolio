@@ -90,15 +90,18 @@ p {
 
   text-transform: capitalize;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
-
-.contact-link {
+.hero-links a:hover {
+  transform: scale(1.1);
+}
+.btn-style-coloured {
   background: var(--accent);
   box-shadow: var(--box-shadow);
   color: #fff;
 }
 
-.about-link {
+.btn-style-light {
   color: var(--accent);
   border: 1px solid var(--accent);
 }
@@ -148,7 +151,7 @@ p {
 }
 .projects-heading {
   font-size: 25px;
-  opacity: 0.8;
+
   margin-top: 30px;
   padding: 10px;
 }
@@ -159,11 +162,19 @@ p {
   color: var(--accent);
 }
 
-.project-description {
+.to-project {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.to-project:hover {
+  scale: 1.1;
+}
+.to-project h2 {
+  color: #000;
+  opacity: 0.8;
 }
 .footer {
   margin-top: 80px;
