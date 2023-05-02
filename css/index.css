@@ -193,6 +193,7 @@ p {
 }
 .f-icon {
   color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 .f-icon :hover {
   scale: 1.1;
