@@ -32,7 +32,9 @@ p {
   scale: 1.1;
   color: var(--accent);
 }
-
+.active {
+  color: var(--accent) !important;
+}
 /* MAIN */
 .main {
   padding: 20px;
