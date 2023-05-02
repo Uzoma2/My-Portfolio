@@ -32,6 +32,7 @@ p {
   scale: 1.1;
   color: var(--accent);
 }
+
 /* MAIN */
 .main {
   padding: 20px;
@@ -189,6 +190,12 @@ p {
   display: flex;
   transform: translateY(-2.5px);
   column-gap: 20px;
+}
+.f-icon {
+  color: #fff;
+}
+.f-icon :hover {
+  scale: 1.1;
 }
 /* MEDIA QUERIES */
 @media (max-width: 1064px) {
