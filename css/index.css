@@ -22,6 +22,7 @@ p {
   width: 200px;
   height: 65px;
   object-fit: contain;
+  
 }
 .header-nav-link {
   font-size: 17px;
@@ -47,23 +48,30 @@ p {
   align-items: center;
   box-shadow: var(--box-shadow);
 }
-
+.hero-img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  margin-left: 200px;
+}
 .hero-description {
-  margin-top: 80px;
+  margin-top: 50px;
   text-align: center;
+  margin-right: 215px;
 }
 .hero-first-heading {
-  font-size: 46px;
-  font-weight: 700;
+  font-size: 26px;
+  font-weight: 500;
 }
 .hero-second-heading {
-  font-size: 96px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 500;
+  opacity: 0.7;
 }
 .hero-third-heading {
-  font-size: 24px;
+  font-size: 29px;
   font-weight: 700;
-  opacity: 0.7;
+  
 }
 .designed-text {
   position: relative;
